@@ -109,6 +109,9 @@ export const Search = (query , getMovie) => {
       let main = document.querySelector(".main");
 
       main.innerHTML = "";
+      if(json.results.length===0){
+          main.innerHTML=`<p class='text-danger  m-auto'>No Result For Your Search</p>`
+       }
       console.log(json);
       json.results.forEach((elem) => {
         main.innerHTML += `<div class="card-deck col-md-4 col-lg-4 col-6">

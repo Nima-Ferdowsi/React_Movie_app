@@ -35,7 +35,10 @@ export  const MovieSelector=(props)=>{
 }
 
 export const Search=(props)=>{
+  var input=document.querySelector('.openinput')
+
   document.querySelector(".search-btn").addEventListener("click", (e) => {
+    if(input.value!=='' &&input.value!==' '&& input.value!==null){
     localStorage.setItem(
       "SearchType",
       JSON.stringify({
@@ -44,9 +47,10 @@ export const Search=(props)=>{
       })
     );
       props.history.push("/Movie-Tv");
-    
+    }    
     
   });
+
 }
 
 
