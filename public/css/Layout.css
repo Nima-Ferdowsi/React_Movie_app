@@ -1,0 +1,212 @@
+
+.navbar .nav .btn-primary,
+.navbar .nav .btn-primary:active {
+  color: #fff;
+  background: #33cabb;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  vertical-align: middle;
+  border: none;
+
+}
+
+.navbar .nav .btn-primary:hover,
+.navbar .nav .btn-primary:focus {
+  color: #fff;
+  outline: none;
+  background: #31bfb1;
+}
+
+/*#login-nav{
+        margin-right:5rem;
+        color:red;
+	}*/
+.navbar .nav .dropdown-menu li {
+  color: #999;
+  font-weight: normal;
+}
+
+.navbar .nav .dropdown-menu li a,
+.navbar .nav .dropdown-menu li a:hover,
+.navbar .nav .dropdown-menu li a:focus {
+  padding: 8px 20px;
+  line-height: normal;
+}
+
+.navbar .navbar-form {
+  border: none;
+}
+
+.navbar .dropdown-menu.form-wrapper {
+  width: 280px;
+  padding: 20px;
+  left: auto;
+/*   right: 0;
+ */  font-size: 14px;
+}
+
+.navbar .dropdown-menu.form-wrapper a {
+  color: #33cabb;
+  padding: 0 !important;
+}
+
+.navbar .form-wrapper .social-btn .btn,
+.navbar .form-wrapper .social-btn .btn:hover {
+  color: #fff;
+  margin: 0;
+  padding: 0 !important;
+  font-size: 13px;
+  border: none;
+  transition: all 0.4s;
+  text-align: center;
+  line-height: 34px;
+  width: 47%;
+  text-decoration: none;
+}
+
+.navbar .social-btn .btn-primary {
+  background: #507cc0;
+}
+
+.navbar .social-btn .btn-primary:hover {
+  background: #4676bd;
+}
+
+.navbar .social-btn .btn-info {
+  background: #64ccf1;
+}
+
+.navbar .social-btn .btn-info:hover {
+  background: #4ec7ef;
+}
+
+.navbar .social-btn .btn i {
+  margin-right: 5px;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.navbar .form-wrapper .form-footer {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.navbar .form-wrapper .checkbox-inline input {
+  margin-top: 3px;
+}
+
+.or-seperator {
+  margin-top: 32px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.or-seperator b {
+  color: #666;
+  padding: 0 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 26px;
+  background: #fff;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+  top: -15px;
+  z-index: 1;
+}
+
+.navbar .checkbox-inline {
+  font-size: 13px;
+}
+
+.navbar .navbar-right .dropdown-toggle::after {
+  display: none;
+}
+
+
+
+footer{
+    position: static;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+}
+.footer{
+    width: 100%;
+    background-color: #252525;
+    color: white;
+}
+.footer-title{
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+hr{
+    border: 1px solid white;
+    width: 50px;
+margin-right: 500px;
+    display: block;
+}
+footer ul li{
+    color:#ff8d1e;
+    cursor: pointer;
+    
+}
+footer ul li:hover{
+    color:#FF0000;
+  
+}
+footer a.btn{
+    margin-top: 10px;
+}
+.social-footer2 li{
+    display: inline-block;
+}
+.social-footer2 li:hover{
+    background-color: #FF0000;
+}
+.gener-column{
+  column-count: 2;
+}
+.dropdown-item:hover{
+  cursor: pointer;
+  background-color: #ff8d1e;
+}
+@media (max-width: 768px) {
+    .navbar .dropdown-menu.form-wrapper {
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+    }
+  
+    .navbar .form-inline {
+      display: inline;
+    }
+  
+    .navbar .input-group {
+      width: 100%;
+    }
+  
+    .navbar .nav .btn-primary,
+    .navbar .nav .btn-primary:active {
+      display: inline;
+    }
+    @keyframes open {
+        0% {
+            width: 0px;
+            visibility: visible;
+        }
+    
+        100% {
+            width: 100%;
+            visibility: visible;
+    
+        }
+    }
+  
+  
+  }

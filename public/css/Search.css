@@ -1,0 +1,140 @@
+.card-deck img{
+  
+    height: 300px;
+    display: inline-block;
+    position: relative;
+}
+.card-deck{
+    width: auto;
+    
+  
+    padding-left: 20px;
+    position: relative;
+   
+
+}
+
+.card{
+    width: auto;
+/*     max-width: 200px;
+ */    
+
+
+}
+.card-footer{
+    animation: openfooter 2s;
+    animation-fill-mode: both;
+    opacity:0;
+
+
+ 
+}
+
+.overview{
+    background-color: black;
+ 
+    position: absolute;
+
+     background-color: black;
+    opacity: 0.75;
+    padding: 2rem;
+    position: absolute;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height:0px;
+visibility: hidden;
+    width: 100%;
+   
+    transition: height 0.3s ease-in;
+
+}
+
+.overcontainer img:hover~.overview {
+    visibility: visible;
+    height: 100%;
+
+
+}
+
+.overview:hover {
+    visibility: visible;
+    height: 100%;
+
+
+}
+.overview h5 {
+    color: white;
+    text-align: center;
+
+
+}
+
+.overview h5:hover {
+    color: orange;
+}
+
+.overview label {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    display: block;
+}
+
+
+.overview a {
+    display: block;
+    position: absolute;
+
+    opacity: 1;
+
+
+
+
+}
+.overcontainer{
+    position: relative;
+}
+@keyframes openfooter{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+.card-footer h4{
+    font-size: small;
+    display: inline;
+}
+.Circle-rate {
+    position: relative;
+
+}
+
+.Circle-rate svg {
+    position: absolute;
+    margin-top: -.4vw;
+
+}
+
+.Circle-rate b {
+
+    margin-left: 10px;
+
+    font-size: 17px;
+
+}
+.Circle-rate {
+ 
+    display:inline-block;
+    padding-left: 10px;
+
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}

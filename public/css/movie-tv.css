@@ -1,0 +1,27 @@
+
+.collapsible{
+   color: black;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border-radius: 15px;
+position: relative;
+box-shadow: 0.5px 0.5px gray;
+
+
+}
+.activecollapse, .collapsible:hover {
+}
+.contentcollapse{
+    margin-top: 50px;
+    max-height:0px;
+    height: 0px;
+    width: 100%;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+    border-radius: 15px;
+}
