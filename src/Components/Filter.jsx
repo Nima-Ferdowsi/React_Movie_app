@@ -2,8 +2,7 @@ import  { Fragment } from 'react';
 const Filter = () => {
     return ( 
         <Fragment>
-               <div className="container-fluid" style={{ paddingTop: 50 }}>
-        <div className="row">
+   
           <div className="container-fluid col-lg-3">
             <div className="row">
               <div className="list-group collapsible">
@@ -31,11 +30,7 @@ const Filter = () => {
               </div>
             </div>
           </div>
-          <div className="container-fluid col-lg-9">
-            <div className="row main"></div>
-          </div>
-        </div>
-      </div>
+      
         </Fragment>
      );
 }
