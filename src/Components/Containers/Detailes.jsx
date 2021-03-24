@@ -1,4 +1,4 @@
-import { Fragment, useContext, useEffect, useState } from "react";
+import  React,{ Fragment, useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Genres, MovieSelector , Search, TVSelector } from "../../js/NavFunctions";
 import Nav from "../Common/Nav";

@@ -25,7 +25,6 @@ class Ajax {
       fetch(ApiUrl + `i=${element.getAttribute("data-imdb-id")}`)
         .then((data) => data.json())
         .then(json => {
-          console.log(json);
           const e = imdbReview[index];
           e.textContent = ((json).Plot);
 
@@ -54,7 +53,6 @@ class Ajax {
       fetch(ApiUrl + `i=${element.getAttribute("data-imdb-id")}`)
         .then((data) => data.json())
         .then((json) => {
-          console.log(json);
           cardTitle[i].textContent = json.Title
           releasedate[i].textContent = "  " + json.Year
           let splitGener = json.Genre.split(",")
@@ -80,7 +78,6 @@ class Ajax {
         let main = document.querySelector(".main");
         main.innerHTML = "";
         let card;
-        console.log(json);
         let newJson = json.Search.slice(0, 10)
         let filterarray = newJson.filter(function (el) {
 
@@ -140,7 +137,6 @@ class Ajax {
 
         })
 
-        console.log(newjs);
 
 
  

@@ -16,7 +16,6 @@ const context=useContext(Context)
       
         {items.map((val)=>{
           
-            console.log(val);
         return    <div className='item recommendation-item'>
             <div className="card">
             <img src={'https://image.tmdb.org/t/p/w300'+val.poster_path}className="rounded card-img-top"  />

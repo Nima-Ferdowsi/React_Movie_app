@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import  React,{ Fragment } from "react";
 
 
 const SliderItems = (props) => {

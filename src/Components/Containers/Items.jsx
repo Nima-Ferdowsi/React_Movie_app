@@ -1,8 +1,7 @@
-import { Fragment } from "react";
+import  React,{ Fragment } from "react";
 
 const Items = ({items,type}) => {
     const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-    console.log(items);
 
     return (
       <div className="container-fluid col-lg-9">

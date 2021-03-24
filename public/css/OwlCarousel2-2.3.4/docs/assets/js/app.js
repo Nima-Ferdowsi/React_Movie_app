@@ -6,7 +6,6 @@ $(document).ready(function(){
 
 	responsiveNav.on('click',function(e){
 		e.preventDefault();
-		console.log(navBar);
 		navBar.toggleClass('active')
 	});
 

@@ -1,4 +1,4 @@
-import { Fragment, useEffect} from "react";
+import  React,{ Fragment} from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -30,7 +30,6 @@ const Cast = (props) => {
       },
     },
   }; 
-  console.log(props.items);
   var img=props.items
   var filtered=img.filter(e=>e.profile_path!==null)
   return (

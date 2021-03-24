@@ -1,4 +1,4 @@
-import { useEffect, Fragment, useContext } from "react";
+import  React,{ useEffect, Fragment, useContext } from "react";
 import MainCarusel from "./../Common/Carusel/MainCarusel";
 import SliderCarusel from "./../Common/Carusel/SliderCarusel";
 import Footer from "./../Common/Footer";

@@ -14,7 +14,6 @@ export const getinfo = (imdbid) => {
     axios
       .get(Apiurl + `i=${element.getAttribute("data-imdb-id")}`)
       .then(({ data }) => {
-        console.log(data);
         const e = imdbReview[index];
         e.textContent = data.Plot;
 
@@ -47,7 +46,6 @@ export const cardinfo = (imdbid) => {
     fetch(Apiurl + `i=${element.getAttribute("data-imdb-id")}`)
       .then((data) => data.json())
       .then((json) => {
-        console.log(json);
         cardTitle[i].textContent = json.Title;
         releasedate[i].textContent = "  " + json.Year;
         let splitGener = json.Genre.split(",");
@@ -84,12 +82,10 @@ export const getDetailes = async (id,type) => {
 
  if (movieData.genres.length !== 0) {
     movieData.genres.map((val) => {
-      console.log(val);
       gener.innerHTML += `<li>${val.name}</li>`;
     });
     overview.innerHTML = movieData.overview;
     status.innerHTML = movieData.status;
-    console.log(movieData.spoken_languages);
     language.innerHTML = movieData.spoken_languages[0].english_name;
   } 
 
@@ -101,7 +97,6 @@ export const getDetailes = async (id,type) => {
   );
   const keywordData = await keywordApi.json();
   var list = document.querySelector(".keyword");
-  console.log(keywordData);
 if(type=='tv'){
   var newdata = keywordData.results.slice(0, 6);
   list.innerHTML = "";
@@ -136,10 +131,7 @@ export const getReviews = async (type,id) => {
       e.author_details.avatar_path !== null &&
       e.author_details.avatar_path.indexOf("https") == -1
   );
-  /*   const {filter}=filter
-   */
-  console.log(reviewData);
-  console.log(filter);
+  
   if (filter.length === 0) {
     writer.innerHTML = `no reviews `;
 
