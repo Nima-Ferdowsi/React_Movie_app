@@ -11,7 +11,9 @@ const Items = ({items,type}) => {
          <div class="card">
          <img class="search-card rounded card-img-top" src={IMGPATH + elem.poster_path}/>
            <div class="card-footer">
-             <h4 class="font-weight-light">{type=='movies'? elem.title: elem.name}</h4>
+             <h4 class="font-weight-light">{elem.title}</h4>
+             <h4 class="font-weight-light">{ elem.name}</h4>
+
              <div class="Circle-rate">
                <svg class="circle-chart" viewBox="0 0 30 30" width="40" height="40" fill="transparent">
                  <circle class="circle-chart__background" stroke="#eee" stroke-width="2" fill="none" cx="15" cy="15"
