@@ -130,18 +130,18 @@ margin-right: 50px;
     padding-top: 2vw;
     padding-bottom: 5vw;
     transform: translate(2vw);
-
+width: 70vw;
 }
 .tab-cotaieners ul{
     display: flex;
 transform: translate(50px);
-
+width: 20vw;
 }
 .tab{
     margin-right: 3vw;
     cursor: pointer;
 }
-.tab::before{
+/* .tab::before{
     content: '';
     position: absolute;
     border-bottom: 3px solid black;
@@ -151,10 +151,10 @@ transform: translate(50px);
  }
 .tab:hover::before{
     width: 60px;
-}
+} */
 .tab-contents{
     border: 1px solid lightgray;
-    width: 90vw;
+    width: 80vw;
     height: 50vh;
     position: relative;
 box-shadow:2px 15px 15px rgba(0,0,0,0.1); 
@@ -213,5 +213,8 @@ overflow: auto;
         width: 100%;
 
         font-weight: bolder;
+    }
+    .tab-contents{
+        width: 95vw;
     }
 }

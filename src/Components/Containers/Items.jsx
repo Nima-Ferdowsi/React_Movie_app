@@ -15,7 +15,7 @@ const Items = ({items,type}) => {
              <h4 class="font-weight-light">{ elem.name}</h4>
 
              <div class="Circle-rate">
-               <svg class="circle-chart" viewBox="0 0 30 30" width="40" height="40" fill="transparent">
+               <svg class="circle-chart" viewBox="0 0 30 30" width="30" height="30" fill="transparent">
                  <circle class="circle-chart__background" stroke="#eee" stroke-width="2" fill="none" cx="15" cy="15"
                    r="14"></circle>
                  <circle class="circle-chart__circle" stroke="#4eb04b" stroke-width="2" stroke-dasharray="80,100" cx="15"

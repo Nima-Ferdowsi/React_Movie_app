@@ -236,7 +236,8 @@
     text-align: center;
     position: absolute;
     display: block;
-    left: 27%;
+    left: 30%;
+    transform: translateX(-80%);
 }
 
 .overview a {
