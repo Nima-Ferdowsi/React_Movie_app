@@ -39,19 +39,20 @@ const Detailes = (props) => {
    setShowRecomm(true)
   }
   useEffect(() => {
-    if(context.getId.type=='series'){
-      getDetailes(context.getId.id , 'tv')
-      getCasts('tv',context.getId.id);
-      getReviews('tv',context.getId.id)
-      recommendation('tv',context.getId.id)
+    if(props.match.params.type=='series'){
+      getDetailes(props.match.params.id , 'tv')
+      getCasts('tv',props.match.params.id);
+      getReviews('tv',props.match.params.id)
+      recommendation('tv',props.match.params.id)
 
 
     }
-    if(context.getId.type=='movie'){
-      getDetailes(context.getId.id,'movie');
-      recommendation('movie',context.getId.id)
-      getCasts('movie',context.getId.id);
-      getReviews('movie',context.getId.id)
+
+    if(props.match.params.type=='movie'){
+      getDetailes(props.match.params.id,'movie');
+      recommendation('movie',props.match.params.id)
+      getCasts('movie',props.match.params.id);
+      getReviews('movie',props.match.params.id)
 
 
 
@@ -70,7 +71,7 @@ const Detailes = (props) => {
     <Fragment>
       <Helmet>
         <title>Detailes</title>
-        <link rel="stylesheet" href="css/detail.css" />
+        <link rel="stylesheet" href="/css/detail.css" />
       </Helmet>
       <Nav></Nav>
       <Jumborton />

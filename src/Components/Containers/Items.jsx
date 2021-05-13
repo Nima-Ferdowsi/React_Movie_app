@@ -1,4 +1,4 @@
-import  React,{ Fragment } from "react";
+ import  React,{ Fragment } from "react";
 
 const Items = ({items,type}) => {
     const IMGPATH = "https://image.tmdb.org/t/p/w1280";
@@ -14,18 +14,10 @@ const Items = ({items,type}) => {
              <h4 class="font-weight-light">{elem.title}</h4>
              <h4 class="font-weight-light">{ elem.name}</h4>
 
-             <div class="Circle-rate">
-               <svg class="circle-chart" viewBox="0 0 30 30" width="30" height="30" fill="transparent">
-                 <circle class="circle-chart__background" stroke="#eee" stroke-width="2" fill="none" cx="15" cy="15"
-                   r="14"></circle>
-                 <circle class="circle-chart__circle" stroke="#4eb04b" stroke-width="2" stroke-dasharray="80,100" cx="15"
-                   cy="15" r="14"></circle>
-               </svg>
-               <b class="rate-number">{elem.vote_average}</b>
-             </div>
+            
              <span class="font-weigth-light" style={{display: 'block'}}>{
                elem.release_date
-             } </span>
+             } </span>   
            </div>
          </div>
          </div>

@@ -12,7 +12,7 @@ const Layout = (props) => {
   const setMovie=(id,type)=>{
     setId({id,type})
     localStorage.setItem('detail',JSON.stringify({id,type}))
-    props.history.push('/Detaile')
+    props.history.push(`/Detaile/${type}/${id}`)
     }
     
   return (
@@ -20,7 +20,7 @@ const Layout = (props) => {
     <Switch>
      <Route path='/' exact render={()=>(<Home></Home>)}></Route>
       <Route path='/Movie-Tv' render={()=>(<Movie></Movie>)} ></Route>
-      <Route path='/Detaile' render={()=>(<Detailes></Detailes>)} ></Route>
+      <Route path='/Detaile/:type/:id' render={()=>(<Detailes></Detailes>)} ></Route>
     </Switch>
     </Context.Provider>
 
