@@ -7,7 +7,7 @@ const Offers = (props) => {
 
 
   
-    <div className="card-deck col-md-12 col-lg-4 col-sm-12  col-12">
+    <div className="card-deck col-md-4 col-lg-4 col-sm-6  col-12">
         <div className="card">
             <img className="card-img-top" src="http://digiflex.themezinho.net/wp-content/uploads/2020/11/icon04.png"></img>
             <div className="card-body">

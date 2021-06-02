@@ -68,8 +68,8 @@ let context=useContext(Context)
             <SliderItems  type='movie' imdb='tt1201607' tmdb='12445'set={context.handleid}/>
           </SliderCarusel>
         
-          <div className="container" style={{paddingTop:70}}>
-<div className="row">
+          <div className="container-fluid" style={{paddingTop:70,backgroundColor:'#292929'}}>
+<div className="row" style={{justifyContent:'center'}}>
         <Offers month="1"  price='$ 4.99' exclusive={false} />
         <Offers month="12" price='$ 7.99' exclusive={true} />
         <Offers month="6"  price='$ 9.99' exclusive={false} />

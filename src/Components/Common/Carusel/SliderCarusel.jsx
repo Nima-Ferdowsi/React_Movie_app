@@ -8,10 +8,11 @@ const SliderCarusel = (props) => {
   const context = useContext(Context);
 
   const bg = {
-    backgroundImage: "url(" + "/image/bg2.jpg" + ")",
+    backgroundColor:'#292929'
+   /*  backgroundImage: "url(" + "/image/bg2.jpg" + ")",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    backgroundRepeat: "no-repeat", */
   };
   const size = {
     responsive: {
