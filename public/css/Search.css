@@ -1,9 +1,11 @@
 .card-deck img{
   
-    height: 300px;
     display: inline-block;
     position: relative;
+    max-width:100%;
+    object-fit: contain;
 }
+
 .card-deck{
     width: auto;
     
@@ -106,7 +108,9 @@ visibility: hidden;
     }
 }
 .card-footer h4{
-    font-size: small;
+    font-size: 25px;
+
+    font-weight: 100;
     display: inline;
 }
 .Circle-rate {

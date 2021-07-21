@@ -21,28 +21,7 @@ const SliderItems = (props) => {
             <label className="card-language">
               Language:<span></span>
             </label>
-            <div className="Circle-rate">
-              <svg height="100" width="100">
-                <circle
-                  cx="50"
-                  cy="50"
-                  r="40"
-                  stroke="#4eb04b"
-                  strokeWidth="3"
-                  fill="none"
-                />
-                <text
-                  x="50%"
-                  y="50%"
-                  textAnchor="middle"
-                  stroke="white"
-                  strokeWidth="3px"
-                  dy=".3em"
-                >
-                  5
-                </text>
-              </svg>
-            </div>
+            
             <a className="btn btn-info" type={props.type}  data-imdb-id={props.imdb} onClick={()=>{
              props.set(props.tmdb ,props.type  )
             }} >

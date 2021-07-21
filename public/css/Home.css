@@ -166,23 +166,30 @@
     padding-left: 7px;
 }
 
+.owl-item{
+    padding-top: 10vh;
+
+}
 .item{
     position: relative;
+    height: fit-content;
+    width: fit-content;
+
 }
 .item img {
-    height: 450px;
-    max-width: 95%;
-    width: 95%;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10vh;
 }
 
 
 .owl-carousel {
     position: relative;
 }
+
 
 .overview {
     background-color: black;
@@ -193,18 +200,22 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 93.2%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
+    display: grid;
+    place-items: center;
 }
 
 .item img:hover~.overview {
-    transform: translateY(10%);
+
+    transform: translateY(0%);
 }
 
 .overview:hover {
-    transform: translateY(10%);
+
+    transform: translateY(0%);
 }
 
 .overview h5 {
@@ -236,8 +247,8 @@
     text-align: center;
     position: absolute;
     display: block;
-    left: 30%;
-    transform: translateX(-80%);
+   /*  left: 30%;
+    transform: translateX(-80%); */
 }
 
 .overview a {
@@ -246,8 +257,8 @@
     display: block;
     /*     position: absolute;
  */
-    transform: translateY(18vh);
-    opacity: 1;
+/*     transform: translateY(18vh);
+ */    opacity: 1;
 }
 
 .card-body {

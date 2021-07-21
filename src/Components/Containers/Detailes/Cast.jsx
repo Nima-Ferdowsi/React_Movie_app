@@ -41,7 +41,7 @@ const Cast = (props) => {
         responsive={size.responsive}
         dots={false}
         autoplay={true}
-        loop={true}
+        loop={false}
         
       >
   
