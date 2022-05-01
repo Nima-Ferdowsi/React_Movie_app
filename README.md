@@ -1,3 +1,18 @@
+## Intro
+
+This project is created with react and tmdb api and ui is created with bootstrap.
+you can see movie and shows details (cast,reviews,similar movies,genre,keywords)
+you can serach for movie and shows
+<img src="/readmeImg/Screenshot (40).png" style=" width:50% ; height:50% "  >
+
+ <img src="/readmeImg/Screenshot (38).png" style=" width:100% ; height:100% "  >
+  <img src="/readmeImg/Screenshot (36).png" style=" width:100% ; height:100% "  >
+
+
+## Note
+
+If you are from Iran you might get error from server so you need to have VPN
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

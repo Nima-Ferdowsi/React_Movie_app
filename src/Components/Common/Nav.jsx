@@ -97,7 +97,7 @@ const Nav = (props) => {
             </li>
     
         </ul>
-        <form className="form-inline my-2 my-lg-0">
+        <form onSubmit={(e)=>e.preventDefault()} className="form-inline my-2 my-lg-0">
             <input className="form-control mr-sm-2 openinput" ref={props.queryRef} type="search" placeholder="Search" aria-label="Search"/>
             <a ref={props.serchRef} className="btn search-btn btn-outline-success my-2 my-sm-0">Search</a>
         </form>
